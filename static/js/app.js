@@ -7,6 +7,7 @@ let weatherInfo = document.querySelector('#weatherInfo');
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    weatherInfo.innerHTML = "" // clear old weather data 
 
     let city = e.target.city.value;
     let state = e.target.state.value;
